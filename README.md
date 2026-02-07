@@ -24,31 +24,14 @@ Este proyecto está construido con las siguientes tecnologías:
 
 ### UI & Estilos
 - **[Radix UI](https://www.radix-ui.com/)** - Componentes accesibles sin estilos
-  - Biblioteca completa de componentes incluyendo diálogos, menús desplegables, tooltips y más
+  - Biblioteca de componentes incluyendo diálogos, menús desplegables, tooltips y más
   - Construido sobre estándares WAI-ARIA para accesibilidad
 - **[shadcn/ui](https://ui.shadcn.com/)** - Biblioteca de componentes construida sobre Radix UI y Tailwind CSS
 - **[TailwindCSS 3.4.17](https://tailwindcss.com/)** - Framework CSS de utilidades
 - **[Tailwind Merge](https://github.com/dcastil/tailwind-merge)** - Utilidad para fusionar clases de Tailwind CSS de forma segura
-
-### Formularios & Validación
-- **[React Hook Form 7.54.1](https://react-hook-form.com/)** - Biblioteca de formularios performante y flexible
-- **[@hookform/resolvers](https://github.com/react-hook-form/resolvers)** - Resolvedores de validación para React Hook Form
-- **[Zod 3.24.1](https://zod.dev/)** - Validación de esquemas con tipado TypeScript
-
-### Gráficos y Visualización de Datos
-- **[Recharts 2.15.0](https://recharts.org/)** - Biblioteca de gráficos componibles construida con componentes React
-
-### Utilidades UI
-- **[Lucide React 0.544.0](https://lucide.dev/)** - Biblioteca de iconos hermosa y consistente
-- **[Embla Carousel React 8.5.1](https://www.embla-carousel.com/)** - Componente carrusel/slider
-- **[Input OTP 1.4.1](https://input-otp.js.org/)** - Componente de entrada de contraseña de una sola vez
-- **[Sonner](https://sonner.emilkowal.ski/)** - Biblioteca de notificaciones toast
 - **[Class Variance Authority 0.7.1](https://cva.style/)** - Biblioteca CSS-in-JS para variantes de estilos
 - **[CLSX 2.1.1](https://github.com/lukeed/clsx)** - Utilidad para cadenas de className condicionales
-- **[React Resizable Panels](https://github.com/bvaughn/react-resizable-panels)** - Componentes de paneles redimensionables
-- **[Vaul](https://vaul.emilkowal.ski/)** - Biblioteca de componentes drawer
-- **[React Day Picker 8.10.1](https://daypicker.js.org/)** - Componente selector de fecha
-- **[Date FNS 4.1.0](https://date-fns.org/)** - Biblioteca moderna de utilidades de fecha
+- **[Lucide React 0.544.0](https://lucide.dev/)** - Biblioteca de iconos hermosa y consistente
 
 ### Temas
 - **[Next Themes 0.4.6](https://github.com/pacocoursey/next-themes)** - Gestión de modo oscuro y temas para Next.js
