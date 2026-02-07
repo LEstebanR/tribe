@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import { AnimateIn } from "@/components/animate-in"
 
 const rules = [
   {
@@ -58,43 +59,45 @@ const rules = [
   },
 ]
 
-function RuleItem({ rule }: { rule: (typeof rules)[number] }) {
+function RuleItem({ rule, index }: { rule: (typeof rules)[number]; index: number }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="border-b border-border">
-      <button
-        onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-primary"
-      >
-        <span className="font-display text-lg uppercase tracking-wider text-foreground">
-          {rule.title}
-        </span>
-        <ChevronDown
+    <AnimateIn delay={index * 80} direction="up">
+      <div className="border-b border-border">
+        <button
+          onClick={() => setOpen(!open)}
+          className="flex w-full items-center justify-between py-5 text-left transition-colors hover:text-primary"
+        >
+          <span className="font-display text-lg uppercase tracking-wider text-foreground">
+            {rule.title}
+          </span>
+          <ChevronDown
+            className={cn(
+              "h-5 w-5 text-muted-foreground transition-transform duration-300",
+              open && "rotate-180 text-primary"
+            )}
+          />
+        </button>
+        <div
           className={cn(
-            "h-5 w-5 text-muted-foreground transition-transform",
-            open && "rotate-180 text-primary"
+            "grid transition-all duration-300 ease-in-out",
+            open ? "grid-rows-[1fr] opacity-100 pb-5" : "grid-rows-[0fr] opacity-0"
           )}
-        />
-      </button>
-      <div
-        className={cn(
-          "grid transition-all duration-300 ease-in-out",
-          open ? "grid-rows-[1fr] opacity-100 pb-5" : "grid-rows-[0fr] opacity-0"
-        )}
-      >
-        <div className="overflow-hidden">
-          <ul className="flex flex-col gap-3">
-            {rule.content.map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
-                {item}
-              </li>
-            ))}
-          </ul>
+        >
+          <div className="overflow-hidden">
+            <ul className="flex flex-col gap-3">
+              {rule.content.map((item, i) => (
+                <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                  <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </AnimateIn>
   )
 }
 
@@ -102,22 +105,24 @@ export function Rules() {
   return (
     <section id="reglamento" className="py-24 md:py-32 border-t border-border">
       <div className="mx-auto max-w-3xl px-6">
-        <div className="mb-16">
-          <span className="text-primary font-display text-sm uppercase tracking-[0.3em]">
-            Reglamento
-          </span>
-          <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
-            Reglas de conducta
-          </h2>
-          <div className="mt-3 h-1 w-12 bg-primary" />
-          <p className="mt-6 text-muted-foreground leading-relaxed">
-            Para mantener un ambiente sano y motivador, todos los miembros de TRIBE seguimos estas reglas.
-          </p>
-        </div>
+        <AnimateIn direction="up">
+          <div className="mb-16">
+            <span className="text-primary font-display text-sm uppercase tracking-[0.3em]">
+              Reglamento
+            </span>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
+              Reglas de conducta
+            </h2>
+            <div className="mt-3 h-1 w-12 bg-primary" />
+            <p className="mt-6 text-muted-foreground leading-relaxed">
+              Para mantener un ambiente sano y motivador, todos los miembros de TRIBE seguimos estas reglas.
+            </p>
+          </div>
+        </AnimateIn>
 
         <div className="border-t border-border">
-          {rules.map((rule) => (
-            <RuleItem key={rule.title} rule={rule} />
+          {rules.map((rule, i) => (
+            <RuleItem key={rule.title} rule={rule} index={i} />
           ))}
         </div>
       </div>

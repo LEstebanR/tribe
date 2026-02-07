@@ -1,11 +1,11 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Inter, Oswald } from 'next/font/google'
+import { DM_Sans, Space_Grotesk } from 'next/font/google'
 
 import './globals.css'
 
-const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
-const _oswald = Oswald({ subsets: ['latin'], variable: '--font-oswald' })
+const _dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
+const _spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
 
 export const metadata: Metadata = {
   title: 'TRIBE Club - Running Santa Barbara',
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={`${_inter.variable} ${_oswald.variable} font-sans antialiased`}>{children}</body>
+      <body className={`${_dmSans.variable} ${_spaceGrotesk.variable} font-sans antialiased`}>{children}</body>
     </html>
   )
 }
