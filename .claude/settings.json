@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun install:*)",
+      "Bash(bun build:*)",
+      "Bash(bun run build:*)",
+      "Bash(bun dev:*)",
+      "Bash(bun lint:*)",
+      "Bash(bun type-check:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(ls:*)"
+    ]
+  },
+  "model": "haiku",
+  "max_turns": 10,
+  "auto_memory": true,
+  "memory_dir": ".claude/memory"
+}

@@ -1,0 +1,31 @@
+{
+  "hooks": {
+    "post-file-edit": {
+      "enabled": true,
+      "description": "Runs after a file is edited",
+      "commands": [
+        "bun lint {{file}}"
+      ]
+    },
+    "pre-commit": {
+      "enabled": false,
+      "description": "Runs before committing changes",
+      "commands": [
+        "bun type-check",
+        "bun lint"
+      ]
+    },
+    "post-git-push": {
+      "enabled": false,
+      "description": "Runs after pushing to remote",
+      "commands": []
+    },
+    "on-error": {
+      "enabled": true,
+      "description": "Runs when Claude encounters an error",
+      "commands": [
+        "echo 'Error occurred - check output above'"
+      ]
+    }
+  }
+}

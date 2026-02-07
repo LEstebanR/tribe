@@ -1,0 +1,23 @@
+{
+  "name": "GitHub MCP Server",
+  "description": "Connect to GitHub API for issue and PR management",
+  "type": "mcp",
+  "enabled": false,
+  "version": "1.0.0",
+  "config": {
+    "apiEndpoint": "https://api.github.com",
+    "authentication": "token",
+    "tokenEnvVar": "GITHUB_TOKEN"
+  },
+  "capabilities": [
+    "read-issues",
+    "read-pulls",
+    "create-issues",
+    "comment-issues",
+    "manage-labels"
+  ],
+  "example_usage": {
+    "command": "/github list-issues owner/repo",
+    "description": "List all issues in a repository"
+  }
+}

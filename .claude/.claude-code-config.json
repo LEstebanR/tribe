@@ -1,0 +1,64 @@
+{
+  "projectName": "Tribe Running Club",
+  "projectDescription": "Modern web application for a running club in Santa Bárbara",
+  "version": "0.1.0",
+
+  "codebaseAnalysis": {
+    "enabled": true,
+    "indexOnStartup": false,
+    "updateInterval": 3600000
+  },
+
+  "aiSettings": {
+    "defaultModel": "haiku",
+    "modelsAvailable": ["haiku", "sonnet", "opus"],
+    "modelOverrides": {
+      "codeGeneration": "sonnet",
+      "codeReview": "opus",
+      "documentation": "sonnet"
+    }
+  },
+
+  "fileWatching": {
+    "enabled": true,
+    "patterns": [
+      "**/*.tsx",
+      "**/*.ts",
+      "tailwind.config.ts",
+      "CLAUDE.md"
+    ],
+    "ignoredPatterns": [
+      "node_modules/**",
+      ".next/**",
+      "*.lock"
+    ]
+  },
+
+  "autoFormatting": {
+    "onSave": false,
+    "formatOnEdit": false
+  },
+
+  "contextWindow": {
+    "maxTokens": 200000,
+    "prioritizeRecentFiles": true,
+    "includeGitContext": true
+  },
+
+  "collaboration": {
+    "enableRemoteSessions": false,
+    "autoSyncSettings": true
+  },
+
+  "integrations": {
+    "eslint": {
+      "enabled": true,
+      "runOnSave": false,
+      "autoFix": false
+    },
+    "typescript": {
+      "enabled": true,
+      "strictMode": true
+    }
+  }
+}

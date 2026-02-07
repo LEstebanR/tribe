@@ -1,0 +1,41 @@
+{
+  "id": "generate-component",
+  "name": "Generate React Component",
+  "description": "Generates a new React component with TypeScript, TailwindCSS, and shadcn/ui integration",
+  "version": "1.0.0",
+  "trigger": {
+    "command": "generate-component",
+    "description": "Creates a new React component scaffold"
+  },
+  "inputs": [
+    {
+      "name": "component_name",
+      "type": "string",
+      "description": "Name of the component (PascalCase)",
+      "required": true,
+      "example": "UserCard"
+    },
+    {
+      "name": "component_type",
+      "type": "select",
+      "description": "Type of component",
+      "options": ["functional", "client", "server"],
+      "required": true
+    },
+    {
+      "name": "with_shadcn",
+      "type": "boolean",
+      "description": "Include shadcn/ui components",
+      "default": false
+    }
+  ],
+  "steps": [
+    "Ask user for component details if not provided",
+    "Generate TypeScript React component with proper types",
+    "Add TailwindCSS styling using responsive classes",
+    "Include JSDoc comments",
+    "Create file in components/ directory",
+    "Update imports if needed"
+  ],
+  "template": "react-component"
+}

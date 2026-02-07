@@ -1,0 +1,36 @@
+{
+  "keybindings": [
+    {
+      "key": "ctrl+shift+b",
+      "command": "run-build",
+      "description": "Run bun build"
+    },
+    {
+      "key": "ctrl+shift+l",
+      "command": "run-lint",
+      "description": "Run bun lint"
+    },
+    {
+      "key": "ctrl+shift+t",
+      "command": "run-type-check",
+      "description": "Run type checking"
+    },
+    {
+      "key": "ctrl+shift+d",
+      "command": "run-dev",
+      "description": "Start dev server"
+    },
+    {
+      "key": "cmd+k cmd+a",
+      "command": "analyze-codebase",
+      "description": "Analyze current codebase (chord)",
+      "chord": true
+    },
+    {
+      "key": "cmd+k cmd+f",
+      "command": "find-pattern",
+      "description": "Find code pattern (chord)",
+      "chord": true
+    }
+  ]
+}
