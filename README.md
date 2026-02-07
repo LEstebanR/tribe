@@ -1,163 +1,163 @@
 # Tribe
 
-A modern, high-performance web application built with cutting-edge web technologies and best practices for component-driven development.
+Una aplicación web moderna y de alto rendimiento construida con tecnologías web de última generación y mejores prácticas para desarrollo dirigido por componentes.
 
-## 📋 Table of Contents
+## 📋 Tabla de Contenidos
 
-- [Tech Stack](#-tech-stack)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Development](#-development)
-- [Building](#-building)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [Available Scripts](#-available-scripts)
+- [Stack Tecnológico](#-stack-tecnológico)
+- [Requisitos Previos](#-requisitos-previos)
+- [Instalación](#-instalación)
+- [Desarrollo](#-desarrollo)
+- [Construcción](#-construcción)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Contribución](#-contribución)
+- [Scripts Disponibles](#-scripts-disponibles)
 
-## 🛠️ Tech Stack
+## 🛠️ Stack Tecnológico
 
-This project is built with the following technologies:
+Este proyecto está construido con las siguientes tecnologías:
 
-### Core Framework
-- **[Next.js 16.1.6](https://nextjs.org/)** - React framework for production with server-side rendering and static site generation
-- **[React 19](https://react.dev/)** - JavaScript library for building user interfaces
-- **[TypeScript 5.7.3](https://www.typescriptlang.org/)** - Typed superset of JavaScript for safer development
+### Framework Principal
+- **[Next.js 16.1.6](https://nextjs.org/)** - Framework React para producción con renderizado del lado del servidor y generación estática
+- **[React 19](https://react.dev/)** - Biblioteca JavaScript para construir interfaces de usuario
+- **[TypeScript 5.7.3](https://www.typescriptlang.org/)** - Superconjunto de JavaScript tipado para desarrollo más seguro
 
-### UI & Styling
-- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible components
-  - Comprehensive component library including dialogs, dropdowns, tooltips, and more
-  - Built on WAI-ARIA standards for accessibility
-- **[shadcn/ui](https://ui.shadcn.com/)** - Component library built on top of Radix UI and Tailwind CSS
-- **[TailwindCSS 3.4.17](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[Tailwind Merge](https://github.com/dcastil/tailwind-merge)** - Utility to merge Tailwind CSS classes safely
+### UI & Estilos
+- **[Radix UI](https://www.radix-ui.com/)** - Componentes accesibles sin estilos
+  - Biblioteca completa de componentes incluyendo diálogos, menús desplegables, tooltips y más
+  - Construido sobre estándares WAI-ARIA para accesibilidad
+- **[shadcn/ui](https://ui.shadcn.com/)** - Biblioteca de componentes construida sobre Radix UI y Tailwind CSS
+- **[TailwindCSS 3.4.17](https://tailwindcss.com/)** - Framework CSS de utilidades
+- **[Tailwind Merge](https://github.com/dcastil/tailwind-merge)** - Utilidad para fusionar clases de Tailwind CSS de forma segura
 
-### Forms & Validation
-- **[React Hook Form 7.54.1](https://react-hook-form.com/)** - Performant, flexible form library
-- **[@hookform/resolvers](https://github.com/react-hook-form/resolvers)** - Validation resolvers for React Hook Form
-- **[Zod 3.24.1](https://zod.dev/)** - TypeScript-first schema validation with static type inference
+### Formularios & Validación
+- **[React Hook Form 7.54.1](https://react-hook-form.com/)** - Biblioteca de formularios performante y flexible
+- **[@hookform/resolvers](https://github.com/react-hook-form/resolvers)** - Resolvedores de validación para React Hook Form
+- **[Zod 3.24.1](https://zod.dev/)** - Validación de esquemas con tipado TypeScript
 
-### Charts & Data Visualization
-- **[Recharts 2.15.0](https://recharts.org/)** - Composable charting library built on React components
+### Gráficos y Visualización de Datos
+- **[Recharts 2.15.0](https://recharts.org/)** - Biblioteca de gráficos componibles construida con componentes React
 
-### UI Utilities
-- **[Lucide React 0.544.0](https://lucide.dev/)** - Beautiful & consistent icon library
-- **[Embla Carousel React 8.5.1](https://www.embla-carousel.com/)** - Carousel/slider component
-- **[Input OTP 1.4.1](https://input-otp.js.org/)** - One-time password input component
-- **[Sonner](https://sonner.emilkowal.ski/)** - Toast notification library
-- **[Class Variance Authority 0.7.1](https://cva.style/)** - CSS-in-JS library for styling variants
-- **[CLSX 2.1.1](https://github.com/lukeed/clsx)** - Utility for conditional className strings
-- **[React Resizable Panels](https://github.com/bvaughn/react-resizable-panels)** - Resizable panel components
-- **[Vaul](https://vaul.emilkowal.ski/)** - Drawer component library
-- **[React Day Picker 8.10.1](https://daypicker.js.org/)** - Date picker component
-- **[Date FNS 4.1.0](https://date-fns.org/)** - Modern date utility library
+### Utilidades UI
+- **[Lucide React 0.544.0](https://lucide.dev/)** - Biblioteca de iconos hermosa y consistente
+- **[Embla Carousel React 8.5.1](https://www.embla-carousel.com/)** - Componente carrusel/slider
+- **[Input OTP 1.4.1](https://input-otp.js.org/)** - Componente de entrada de contraseña de una sola vez
+- **[Sonner](https://sonner.emilkowal.ski/)** - Biblioteca de notificaciones toast
+- **[Class Variance Authority 0.7.1](https://cva.style/)** - Biblioteca CSS-in-JS para variantes de estilos
+- **[CLSX 2.1.1](https://github.com/lukeed/clsx)** - Utilidad para cadenas de className condicionales
+- **[React Resizable Panels](https://github.com/bvaughn/react-resizable-panels)** - Componentes de paneles redimensionables
+- **[Vaul](https://vaul.emilkowal.ski/)** - Biblioteca de componentes drawer
+- **[React Day Picker 8.10.1](https://daypicker.js.org/)** - Componente selector de fecha
+- **[Date FNS 4.1.0](https://date-fns.org/)** - Biblioteca moderna de utilidades de fecha
 
-### Theming
-- **[Next Themes 0.4.6](https://github.com/pacocoursey/next-themes)** - Dark mode and theme management for Next.js
+### Temas
+- **[Next Themes 0.4.6](https://github.com/pacocoursey/next-themes)** - Gestión de modo oscuro y temas para Next.js
 
-### Package Management & Runtime
-- **[Bun](https://bun.sh/)** - Fast all-in-one JavaScript runtime and package manager
+### Gestión de Paquetes & Runtime
+- **[Bun](https://bun.sh/)** - Runtime JavaScript rápido todo en uno y gestor de paquetes
 
-### Development Tools
-- **[ESLint](https://eslint.org/)** - JavaScript linting utility
+### Herramientas de Desarrollo
+- **[ESLint](https://eslint.org/)** - Utilidad de linting de JavaScript
 
-## ✅ Prerequisites
+## ✅ Requisitos Previos
 
-Before you begin, ensure you have the following installed:
+Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
-- **[Bun](https://bun.sh/)** (v1.0.0 or higher)
-  - Install from: https://bun.sh
-  - Verify installation: `bun --version`
+- **[Bun](https://bun.sh/)** (v1.0.0 o superior)
+  - Instalar desde: https://bun.sh
+  - Verificar instalación: `bun --version`
 
-## 📦 Installation
+## 📦 Instalación
 
-1. **Clone the repository**
+1. **Clonar el repositorio**
    ```bash
    git clone <repository-url>
    cd tribe
    ```
 
-2. **Install dependencies using Bun**
+2. **Instalar dependencias usando Bun**
    ```bash
    bun install
    ```
 
-   This will create a `bun.lock` file which should be committed to version control.
+   Esto creará un archivo `bun.lock` que debe ser guardado en el control de versiones.
 
-## 🚀 Development
+## 🚀 Desarrollo
 
-### Start the development server
+### Iniciar el servidor de desarrollo
 ```bash
 bun dev
 ```
 
-The application will be available at `http://localhost:3000`
+La aplicación estará disponible en `http://localhost:3000`
 
-### Run linting
+### Ejecutar linting
 ```bash
 bun lint
 ```
 
-### Run type checking
+### Ejecutar verificación de tipos
 ```bash
 bun type-check
 ```
 
-## 🏗️ Building
+## 🏗️ Construcción
 
-### Create a production build
+### Crear una compilación para producción
 ```bash
 bun build
 ```
 
-This generates an optimized build in the `.next` directory.
+Esto genera una compilación optimizada en el directorio `.next`.
 
-### Start the production server
+### Iniciar el servidor de producción
 ```bash
 bun start
 ```
 
-The application will be available at `http://localhost:3000`
+La aplicación estará disponible en `http://localhost:3000`
 
-## 📁 Project Structure
+## 📁 Estructura del Proyecto
 
 ```
 tribe/
-├── app/                      # Next.js App Router directory
-│   ├── layout.tsx           # Root layout component
-│   └── page.tsx             # Home page
-├── components/              # Reusable React components
-│   ├── ui/                  # Radix UI based components
-│   └── [feature]/           # Feature-specific components
-├── hooks/                   # Custom React hooks
-├── lib/                     # Utility functions and helpers
-├── styles/                  # Global styles
-├── public/                  # Static assets (images, fonts, etc.)
-├── next.config.mjs          # Next.js configuration
-├── tailwind.config.ts       # TailwindCSS configuration
-├── tsconfig.json            # TypeScript configuration
-├── package.json             # Project dependencies
-├── bun.lock                 # Bun lock file (auto-generated)
-└── README.md               # This file
+├── app/                      # Directorio App Router de Next.js
+│   ├── layout.tsx           # Componente de layout raíz
+│   └── page.tsx             # Página de inicio
+├── components/              # Componentes React reutilizables
+│   ├── ui/                  # Componentes basados en Radix UI
+│   └── [feature]/           # Componentes específicos de características
+├── hooks/                   # Hooks React personalizados
+├── lib/                     # Funciones utilitarias y helpers
+├── styles/                  # Estilos globales
+├── public/                  # Activos estáticos (imágenes, fuentes, etc.)
+├── next.config.mjs          # Configuración de Next.js
+├── tailwind.config.ts       # Configuración de TailwindCSS
+├── tsconfig.json            # Configuración de TypeScript
+├── package.json             # Dependencias del proyecto
+├── bun.lock                 # Archivo de bloqueo de Bun (auto-generado)
+└── README.md               # Este archivo
 ```
 
-## 🤝 Contributing
+## 🤝 Contribución
 
-We follow a Git Flow branching strategy for managing code changes and releases. This section outlines the contribution process.
+Seguimos una estrategia de ramificación Git Flow para gestionar cambios de código y versiones. Esta sección describe el proceso de contribución.
 
-### Git Flow Overview
+### Descripción General de Git Flow
 
-Our branching strategy uses the following branches:
+Nuestra estrategia de ramificación utiliza las siguientes ramas:
 
-- **`main`** - Production-ready code. Only updated through release PRs.
-- **`develop`** - Integration branch for features. Base branch for feature PRs.
-- **`feature/*`** - Feature branches for new functionality
-- **`bugfix/*`** - Branches for bug fixes
-- **`hotfix/*`** - Critical fixes for production issues
+- **`main`** - Código listo para producción. Solo se actualiza a través de PRs de versión.
+- **`develop`** - Rama de integración para características. Rama base para PRs de características.
+- **`feature/*`** - Ramas de características para nueva funcionalidad
+- **`bugfix/*`** - Ramas para corrección de errores
+- **`hotfix/*`** - Correcciones críticas para problemas de producción
 
-### Contributing Workflow
+### Flujo de Trabajo de Contribución
 
-#### 1. **Create a Feature Branch**
+#### 1. **Crear una Rama de Característica**
 
-Create a new feature branch from `develop`:
+Crea una nueva rama de característica desde `develop`:
 
 ```bash
 git checkout develop
@@ -165,117 +165,117 @@ git pull origin develop
 git checkout -b feature/your-feature-name
 ```
 
-Branch naming conventions:
-- Features: `feature/descriptive-name`
-- Bugfixes: `bugfix/descriptive-name`
-- Hotfixes: `hotfix/descriptive-name`
+Convenciones de nombre de rama:
+- Características: `feature/descriptive-name`
+- Correcciones de errores: `bugfix/descriptive-name`
+- Correcciones rápidas: `hotfix/descriptive-name`
 
-Use kebab-case for branch names.
+Usa kebab-case para nombres de rama.
 
-#### 2. **Make Your Changes**
+#### 2. **Realizar Tus Cambios**
 
-- Write clean, well-documented code
-- Follow existing code style and conventions
-- Commit with clear, descriptive messages:
+- Escribe código limpio y bien documentado
+- Sigue el estilo de código y convenciones existentes
+- Realiza commits con mensajes claros y descriptivos:
   ```bash
   git commit -m "feat: add new component for user authentication"
   git commit -m "fix: resolve issue with theme toggle not persisting"
   ```
 
-Use conventional commits:
-- `feat:` for new features
-- `fix:` for bug fixes
-- `refactor:` for code refactoring
-- `docs:` for documentation changes
-- `style:` for code style changes (formatting, etc.)
-- `test:` for test additions
-- `chore:` for build, dependencies, etc.
+Usa commits convencionales:
+- `feat:` para nuevas características
+- `fix:` para correcciones de errores
+- `refactor:` para refactorización de código
+- `docs:` para cambios de documentación
+- `style:` para cambios de estilo de código (formato, etc.)
+- `test:` para adiciones de pruebas
+- `chore:` para compilación, dependencias, etc.
 
-#### 3. **Keep Your Branch Updated**
+#### 3. **Mantén tu Rama Actualizada**
 
-Regularly sync your branch with `develop`:
+Sincroniza regularmente tu rama con `develop`:
 
 ```bash
 git fetch origin
 git rebase origin/develop
 ```
 
-#### 4. **Push Your Changes**
+#### 4. **Envía tus Cambios**
 
 ```bash
 git push origin feature/your-feature-name
 ```
 
-#### 5. **Create a Pull Request**
+#### 5. **Crear una Solicitud de Extracción**
 
-1. Push your branch and create a PR from your feature branch to `develop`
-2. Fill in the PR template with:
-   - Clear description of changes
-   - Related issue numbers (if any)
-   - Testing instructions
-3. Wait for code review and CI checks to pass
-4. Address any feedback from reviewers
+1. Envía tu rama y crea un PR desde tu rama de característica a `develop`
+2. Completa la plantilla de PR con:
+   - Descripción clara de cambios
+   - Números de problemas relacionados (si los hay)
+   - Instrucciones de prueba
+3. Espera a que se complete la revisión de código y las verificaciones de CI
+4. Aborda cualquier retroalimentación de los revisores
 
-#### 6. **Merge to Develop**
+#### 6. **Fusionar a Develop**
 
-Once approved:
-- Squash and merge or regular merge (maintainers will specify)
-- Delete the feature branch after merging
+Una vez aprobado:
+- Aplasta y fusiona o fusiona normalmente (los mantenedores especificarán)
+- Elimina la rama de característica después de fusionar
 
-#### 7. **Release to Main**
+#### 7. **Liberar a Main**
 
-Releases are handled through release PRs:
+Las versiones se manejan a través de PRs de versión:
 
-1. Create a release PR from `develop` to `main`
-2. Update version in `package.json`
-3. Update CHANGELOG (if maintained)
-4. Merge to `main`
-5. Tag the release: `git tag v1.0.0`
+1. Crea un PR de versión desde `develop` a `main`
+2. Actualiza la versión en `package.json`
+3. Actualiza CHANGELOG (si se mantiene)
+4. Fusiona a `main`
+5. Etiqueta la versión: `git tag v1.0.0`
 
-### Code Review Standards
+### Estándares de Revisión de Código
 
-- All PRs require at least one approval
-- CI/CD checks must pass
-- Code should follow project conventions
-- Changes should be adequately tested
+- Todos los PRs requieren al menos una aprobación
+- Las verificaciones de CI/CD deben pasar
+- El código debe seguir las convenciones del proyecto
+- Los cambios deben ser probados adecuadamente
 
-### Development Best Practices
+### Mejores Prácticas de Desarrollo
 
-1. **Before starting work:**
-   - Check existing issues and PRs to avoid duplicate work
-   - Discuss large features in an issue first
+1. **Antes de comenzar el trabajo:**
+   - Verifica los problemas y PRs existentes para evitar duplicar trabajo
+   - Discute características grandes en un problema primero
 
-2. **While coding:**
-   - Keep commits focused and logical
-   - Write self-documenting code
-   - Use TypeScript strict mode for type safety
+2. **Mientras codificas:**
+   - Mantén los commits enfocados y lógicos
+   - Escribe código autodocumentado
+   - Usa modo estricto de TypeScript para seguridad de tipos
 
-3. **Before submitting PR:**
-   - Run `bun lint` to check code style
-   - Run `bun type-check` to verify types
-   - Test your changes locally with `bun dev`
-   - Update documentation if needed
+3. **Antes de enviar PR:**
+   - Ejecuta `bun lint` para verificar el estilo del código
+   - Ejecuta `bun type-check` para verificar tipos
+   - Prueba tus cambios localmente con `bun dev`
+   - Actualiza la documentación si es necesario
 
-## 📜 Available Scripts
+## 📜 Scripts Disponibles
 
-| Script | Command | Description |
+| Script | Comando | Descripción |
 |--------|---------|-------------|
-| Development | `bun dev` | Start Next.js development server with hot reload |
-| Build | `bun build` | Create optimized production build |
-| Production | `bun start` | Start the production server |
-| Linting | `bun lint` | Run ESLint to check code quality |
-| Type Check | `bun type-check` | Run TypeScript compiler without emitting files |
+| Desarrollo | `bun dev` | Inicia el servidor de desarrollo de Next.js con recarga en caliente |
+| Compilar | `bun build` | Crea una compilación de producción optimizada |
+| Producción | `bun start` | Inicia el servidor de producción |
+| Linting | `bun lint` | Ejecuta ESLint para verificar la calidad del código |
+| Verificación de Tipos | `bun type-check` | Ejecuta el compilador de TypeScript sin emitir archivos |
 
-## 📝 License
+## 📝 Licencia
 
-This project is private. All rights reserved.
+Este proyecto es privado. Todos los derechos reservados.
 
-## 🔗 Resources
+## 🔗 Recursos
 
-- [Next.js Documentation](https://nextjs.org/docs)
-- [React Documentation](https://react.dev)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/)
-- [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [Radix UI Documentation](https://www.radix-ui.com/docs/primitives/overview/introduction)
-- [Bun Documentation](https://bun.sh/docs)
+- [Documentación de Next.js](https://nextjs.org/docs)
+- [Documentación de React](https://react.dev)
+- [Manual de TypeScript](https://www.typescriptlang.org/docs/)
+- [Documentación de TailwindCSS](https://tailwindcss.com/docs)
+- [Documentación de Radix UI](https://www.radix-ui.com/docs/primitives/overview/introduction)
+- [Documentación de Bun](https://bun.sh/docs)
 - [Conventional Commits](https://www.conventionalcommits.org/)
