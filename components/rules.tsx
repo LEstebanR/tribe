@@ -9,52 +9,52 @@ const rules = [
   {
     title: "1. Objetivo del grupo",
     content: [
-      "Crear un espacio positivo para compartir experiencias, entrenamientos, carreras, consejos y motivacion relacionados con el running.",
-      "Promover la participacion sin miedo a juicios o criticas innecesarias.",
+      "Crear un espacio positivo para compartir experiencias, entrenamientos, carreras, consejos y motivación relacionados con el running.",
+      "Promover la participación sin miedo a juicios o críticas innecesarias.",
     ],
   },
   {
     title: "2. Publicaciones",
     content: [
       "Se permiten posts sobre entrenamientos, carreras, inscripciones, logros personales, consejos y cualquier tema vinculado al running.",
-      "Cada publicacion debe tener un enfoque constructivo y aportar valor a la comunidad.",
+      "Cada publicación debe tener un enfoque constructivo y aportar valor a la comunidad.",
     ],
   },
   {
     title: "3. Comentarios",
     content: [
       "Apoyo y respeto primero: Los comentarios deben ser motivadores, informativos o neutrales.",
-      "No se permiten comentarios pasivo-agresivos, despectivos, criticas personales sobre decisiones de otros, ni juicios sobre la capacidad economica, fisica o personal de los miembros.",
-      "Si se permiten preguntas genuinas, felicitaciones, consejos practicos y experiencias propias compartidas de manera respetuosa.",
+      "No se permiten comentarios pasivo-agresivos, despectivos, críticas personales sobre decisiones de otros, ni juicios sobre la capacidad económica, física o personal de los miembros.",
+      "Si se permiten preguntas genuinas, felicitaciones, consejos prácticos y experiencias propias compartidas de manera respetuosa.",
     ],
   },
   {
     title: "4. Diversidad de puntos de vista",
     content: [
-      "Todos tenemos opiniones distintas y esta bien expresarlas, siempre que se haga con respeto y sin desmotivar a otros.",
-      "Si alguien no puede participar en una carrera o actividad, se respeta su decision sin necesidad de comentarios negativos.",
+      "Todos tenemos opiniones distintas y está bien expresarlas, siempre que se haga con respeto y sin desmotivar a otros.",
+      "Si alguien no puede participar en una carrera o actividad, se respeta su decisión sin necesidad de comentarios negativos.",
     ],
   },
   {
     title: "5. Convivencia",
     content: [
-      "El grupo es un espacio de motivacion, no de polemica.",
-      "Evitar discusiones innecesarias que puedan generar incomodidad o inhibir la participacion futura.",
+      "El grupo es un espacio de motivación, no de polémica.",
+      "Evitar discusiones innecesarias que puedan generar incomodidad o inhibir la participación futura.",
       "En caso de conflicto, se recomienda resolverlo en privado y no en el grupo.",
     ],
   },
   {
-    title: "6. Moderacion",
+    title: "6. Moderación",
     content: [
-      "Los administradores podran eliminar comentarios o publicaciones que incumplan estas normas.",
-      "Reincidencias pueden llevar a la suspension temporal o definitiva del miembro.",
+      "Los administradores podrán eliminar comentarios o publicaciones que incumplan estas normas.",
+      "Reincidencias pueden llevar a la suspensión temporal o definitiva del miembro.",
     ],
   },
   {
-    title: "7. Espiritu del club",
+    title: "7. Espíritu del club",
     content: [
       "Recordemos que el running es comunidad, apoyo y crecimiento personal.",
-      "Cada aporte debe sumar energia positiva y motivacion para que todos disfruten del grupo.",
+      "Cada aporte debe sumar energía positiva y motivación para que todos disfruten del grupo.",
     ],
   },
 ]

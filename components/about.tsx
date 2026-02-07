@@ -6,19 +6,19 @@ const values = [
     icon: Users,
     title: "Comunidad",
     description:
-      "Un espacio positivo para compartir experiencias, entrenamientos, carreras y motivacion.",
+      "Un espacio positivo para compartir experiencias, entrenamientos, carreras y motivación.",
   },
   {
     icon: Heart,
     title: "Apoyo",
     description:
-      "Promovemos la participacion sin miedo a juicios. Cada miembro suma energia positiva.",
+      "Promovemos la participación sin miedo a juicios. Cada miembro suma energía positiva.",
   },
   {
     icon: TrendingUp,
     title: "Crecimiento",
     description:
-      "El running es crecimiento personal. Juntos vamos mas lejos, mas rapido, mas fuerte.",
+      "El running es crecimiento personal. Juntos vamos más lejos, más rápido, más fuerte.",
   },
 ]
 
@@ -32,12 +32,12 @@ export function About() {
               Nosotros
             </span>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
-              Mas que un club
+              Más que un club
             </h2>
             <div className="mt-3 h-1 w-12 bg-primary" />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              TRIBE nacio en Santa Barbara como un espacio donde corredores de todos los niveles pueden
-              reunirse, entrenar y motivarse mutuamente. No importa tu ritmo ni tu experiencia, aqui
+              TRIBE nació en Santa Barbara como un espacio donde corredores de todos los niveles pueden
+              reunirse, entrenar y motivarse mutuamente. No importa tu ritmo ni tu experiencia, aquí
               todos corremos juntos.
             </p>
           </div>

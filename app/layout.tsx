@@ -9,7 +9,7 @@ const _spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-spac
 
 export const metadata: Metadata = {
   title: 'TRIBE Club - Running Santa Barbara',
-  description: 'Club de running de Santa Barbara. Nos reunimos los miercoles y viernes a correr. Comunidad, apoyo y crecimiento personal.',
+  description: 'Club de running de Santa Barbara. Nos reunimos los miércoles y viernes a correr. Comunidad, apoyo y crecimiento personal.',
 }
 
 export const viewport: Viewport = {

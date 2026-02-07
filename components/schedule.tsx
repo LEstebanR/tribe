@@ -3,10 +3,10 @@ import { AnimateIn } from "@/components/animate-in"
 
 const days = [
   {
-    day: "Miercoles",
+    day: "Miércoles",
     time: "6:00 PM",
     label: "Entrenamiento",
-    description: "Sesion de entrenamiento grupal para todos los niveles.",
+    description: "Sesión de entrenamiento grupal para todos los niveles.",
   },
   {
     day: "Viernes",
@@ -26,7 +26,7 @@ export function Schedule() {
               Horarios
             </span>
             <h2 className="mt-3 font-display text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
-              Cuando corremos
+              Cuándo corremos
             </h2>
             <div className="mt-3 h-1 w-12 bg-primary" />
           </div>
