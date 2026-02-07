@@ -36,7 +36,7 @@ export function About() {
             </h2>
             <div className="mt-3 h-1 w-12 bg-primary" />
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              TRIBE nació en Santa Barbara como un espacio donde corredores de todos los niveles pueden
+              TRIBE nació en Santa Bárbara como un espacio donde corredores de todos los niveles pueden
               reunirse, entrenar y motivarse mutuamente. No importa tu ritmo ni tu experiencia, aquí
               todos corremos juntos.
             </p>

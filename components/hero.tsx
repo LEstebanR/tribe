@@ -36,7 +36,7 @@ export function Hero() {
 
         <AnimateIn delay={600} direction="up">
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto leading-relaxed">
-            Comunidad de running en Santa Barbara. Corremos juntos, crecemos juntos.
+            Comunidad de running en Santa Bárbara. Corremos juntos, crecemos juntos.
           </p>
         </AnimateIn>
 
@@ -44,7 +44,7 @@ export function Hero() {
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin className="h-4 w-4 text-primary" />
-              <span className="text-sm uppercase tracking-wider">Santa Barbara</span>
+              <span className="text-sm uppercase tracking-wider">Santa Bárbara</span>
             </div>
             <div className="hidden sm:block h-4 w-px bg-border" />
             <div className="flex items-center gap-2 text-muted-foreground">

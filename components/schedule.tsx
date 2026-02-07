@@ -53,7 +53,7 @@ export function Schedule() {
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
                     <MapPin className="h-4 w-4 text-primary" />
-                    <span className="text-sm">Santa Barbara</span>
+                    <span className="text-sm">Santa Bárbara</span>
                   </div>
                 </div>
               </div>

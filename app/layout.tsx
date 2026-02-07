@@ -8,8 +8,8 @@ const _dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 const _spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space-grotesk' })
 
 export const metadata: Metadata = {
-  title: 'TRIBE Club - Running Santa Barbara',
-  description: 'Club de running de Santa Barbara. Nos reunimos los miércoles y viernes a correr. Comunidad, apoyo y crecimiento personal.',
+  title: 'TRIBE Club - Running Santa Bárbara',
+  description: 'Club de running de Santa Bárbara. Nos reunimos los miércoles y viernes a correr. Comunidad, apoyo y crecimiento personal.',
 }
 
 export const viewport: Viewport = {

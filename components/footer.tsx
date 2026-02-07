@@ -16,7 +16,7 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-4">
               <p className="text-xs text-muted-foreground">
-                Running club de Santa Barbara.
+                Running club de Santa Bárbara.
               </p>
               <a
                 href="https://www.instagram.com/tribeclub__running/"
