@@ -1,0 +1,34 @@
+{
+  "id": "component-analyzer",
+  "name": "Component Analyzer",
+  "description": "Analyzes React components for best practices, accessibility, and performance",
+  "version": "1.0.0",
+  "trigger": {
+    "command": "/analyze-component",
+    "shortcut": "cmd+k cmd+c",
+    "description": "Analyze the current React component"
+  },
+  "instructions": [
+    "Analyze the React component in the current file",
+    "Check for:",
+    "- TypeScript type safety and proper prop typing",
+    "- Accessibility (ARIA labels, semantic HTML, keyboard navigation)",
+    "- Performance (unnecessary re-renders, useCallback/useMemo usage)",
+    "- Tailwind CSS patterns and responsive design",
+    "- shadcn/ui component usage correctness",
+    "- Component composition and reusability",
+    "Provide specific recommendations for improvements"
+  ],
+  "tools": {
+    "allowed": [
+      "Read",
+      "Grep",
+      "Glob"
+    ]
+  },
+  "context": {
+    "codebase": true,
+    "file": true
+  },
+  "model": "sonnet"
+}

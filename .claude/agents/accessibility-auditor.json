@@ -1,0 +1,37 @@
+{
+  "id": "accessibility-auditor",
+  "name": "Accessibility Auditor",
+  "description": "Audits components and pages for WCAG 2.1 accessibility compliance",
+  "version": "1.0.0",
+  "trigger": {
+    "command": "/audit-accessibility",
+    "description": "Run an accessibility audit"
+  },
+  "instructions": [
+    "Audit React components for accessibility compliance (WCAG 2.1)",
+    "Check for:",
+    "- Semantic HTML usage (buttons, links, headings, etc.)",
+    "- ARIA labels and roles where needed",
+    "- Keyboard navigation support (tabindex, focus management)",
+    "- Color contrast ratios (minimum 4.5:1)",
+    "- Form labels and error messages",
+    "- Image alt text",
+    "- Screen reader compatibility",
+    "- Focus indicators visibility",
+    "Provide specific recommendations and code examples for fixes"
+  ],
+  "tools": {
+    "allowed": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Edit"
+    ]
+  },
+  "context": {
+    "codebase": true,
+    "file": true
+  },
+  "model": "sonnet",
+  "tags": ["accessibility", "wcag", "audit"]
+}

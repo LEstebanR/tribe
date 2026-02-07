@@ -1,0 +1,32 @@
+{
+  "id": "performance-auditor",
+  "name": "Performance Auditor",
+  "description": "Audits the codebase for performance bottlenecks and optimizations",
+  "version": "1.0.0",
+  "trigger": {
+    "command": "/audit-performance",
+    "description": "Run a performance audit on the project"
+  },
+  "instructions": [
+    "Audit the TypeScript/React codebase for performance issues",
+    "Check for:",
+    "- Unnecessary re-renders and component memoization opportunities",
+    "- Bundle size implications of dependencies",
+    "- Next.js optimization opportunities (Image, dynamic imports, code splitting)",
+    "- TailwindCSS class usage efficiency",
+    "- Large or inefficient queries/API calls",
+    "- React hooks optimization (useCallback, useMemo, useEffect dependencies)",
+    "Generate a detailed report with specific file locations and recommendations"
+  ],
+  "tools": {
+    "allowed": [
+      "Glob",
+      "Grep",
+      "Read"
+    ]
+  },
+  "context": {
+    "codebase": true
+  },
+  "model": "opus"
+}

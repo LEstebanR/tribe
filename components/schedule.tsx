@@ -4,14 +4,14 @@ import { AnimateIn } from "@/components/animate-in"
 const days = [
   {
     day: "Miércoles",
-    time: "6:00 PM",
+    time: "7:30 PM",
     label: "Entrenamiento",
     description: "Sesión de entrenamiento grupal para todos los niveles.",
   },
   {
     day: "Viernes",
-    time: "6:00 PM",
-    label: "Carrera libre",
+    time: "7:30 PM",
+    label: "Entrenamiento",
     description: "Corremos juntos a ritmo libre. Ideal para cerrar la semana.",
   },
 ]

@@ -1,0 +1,34 @@
+{
+  "id": "generate-tests",
+  "name": "Generate Test Suite",
+  "description": "Generates comprehensive test files for React components and utilities",
+  "version": "1.0.0",
+  "trigger": {
+    "command": "generate-tests",
+    "description": "Creates test files for the current file"
+  },
+  "inputs": [
+    {
+      "name": "test_framework",
+      "type": "select",
+      "description": "Test framework to use",
+      "options": ["vitest", "jest", "testing-library"],
+      "default": "vitest"
+    },
+    {
+      "name": "coverage_level",
+      "type": "select",
+      "description": "Test coverage level",
+      "options": ["basic", "standard", "comprehensive"],
+      "default": "standard"
+    }
+  ],
+  "steps": [
+    "Analyze the target file structure",
+    "Generate appropriate test cases",
+    "Include unit tests for functions",
+    "Include component render tests for React components",
+    "Add edge case testing",
+    "Create __tests__ or .test.ts files appropriately"
+  ]
+}
