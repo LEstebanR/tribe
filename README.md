@@ -26,8 +26,8 @@ This project is built with the following technologies:
 - **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible components
   - Comprehensive component library including dialogs, dropdowns, tooltips, and more
   - Built on WAI-ARIA standards for accessibility
+- **[shadcn/ui](https://ui.shadcn.com/)** - Component library built on top of Radix UI and Tailwind CSS
 - **[TailwindCSS 3.4.17](https://tailwindcss.com/)** - Utility-first CSS framework
-- **[TailwindCSS Animate](https://github.com/jamiebuilds/tailwindcss-animate)** - Animation utilities for Tailwind
 - **[Tailwind Merge](https://github.com/dcastil/tailwind-merge)** - Utility to merge Tailwind CSS classes safely
 
 ### Forms & Validation
