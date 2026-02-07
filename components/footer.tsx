@@ -31,7 +31,7 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <div className="mt-6 border-t border-border pt-6 text-center">
+          <div className="mt-6 pt-6 text-center">
             <p className="text-xs text-muted-foreground">
               Hecho con ❤️ por{" "}
               <a
