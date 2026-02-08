@@ -1,3 +1,7 @@
+"use client"
+
+import { motion } from "framer-motion"
+import { Heart } from "lucide-react"
 import { AnimateIn } from "@/components/animate-in"
 
 export function Footer() {
@@ -31,18 +35,36 @@ export function Footer() {
               </a>
             </div>
           </div>
-          <div className="mt-6 pt-6 text-center">
-            <p className="text-xs text-muted-foreground">
-              Hecho con ❤️ por{" "}
-              <a
-                href="https://github.com/LEstebanR"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-primary hover:underline transition-colors"
+          <div className="mt-6 pt-6 flex justify-center">
+            <div className="flex items-center gap-x-2 text-xs">
+              <span className="text-muted-foreground">Made with</span>
+              <motion.div
+                animate={{
+                  scale: [1, 1.2, 1],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "reverse",
+                }}
               >
-                LEsteban
-              </a>
-            </p>
+                <Heart className="h-4 w-4 fill-red-500 text-red-500" />
+              </motion.div>
+              <span className="text-muted-foreground">by</span>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a
+                  href="https://lesteban.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary hover:underline hover:underline-offset-4 hover:transition-all hover:duration-300"
+                >
+                  LEstebanR
+                </a>
+              </motion.div>
+            </div>
           </div>
         </AnimateIn>
       </div>
